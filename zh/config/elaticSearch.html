@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ElasticSearch 配置 | xwine</title>
+    <meta name="description" content="THE BEST TIME IS NOW">
+    <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.8e89f972.css" as="style"><link rel="preload" href="/assets/js/app.e3e8a4f2.js" as="script"><link rel="preload" href="/assets/js/2.53d3f055.js" as="script"><link rel="preload" href="/assets/js/17.6cd51b48.js" as="script"><link rel="prefetch" href="/assets/js/10.eed22b54.js"><link rel="prefetch" href="/assets/js/11.20d4dce6.js"><link rel="prefetch" href="/assets/js/12.df3d0fb3.js"><link rel="prefetch" href="/assets/js/13.e7adab27.js"><link rel="prefetch" href="/assets/js/14.f0924b76.js"><link rel="prefetch" href="/assets/js/15.00601bcd.js"><link rel="prefetch" href="/assets/js/16.431f60c9.js"><link rel="prefetch" href="/assets/js/18.9992f2f3.js"><link rel="prefetch" href="/assets/js/19.f9056bf7.js"><link rel="prefetch" href="/assets/js/20.b7c10170.js"><link rel="prefetch" href="/assets/js/21.a33bf179.js"><link rel="prefetch" href="/assets/js/22.55e0d477.js"><link rel="prefetch" href="/assets/js/23.25460b11.js"><link rel="prefetch" href="/assets/js/24.81c7b086.js"><link rel="prefetch" href="/assets/js/25.f1f12557.js"><link rel="prefetch" href="/assets/js/26.3fe0f6a4.js"><link rel="prefetch" href="/assets/js/27.9e45af44.js"><link rel="prefetch" href="/assets/js/28.50d68e71.js"><link rel="prefetch" href="/assets/js/29.fd64a2e5.js"><link rel="prefetch" href="/assets/js/3.85a437da.js"><link rel="prefetch" href="/assets/js/30.57743674.js"><link rel="prefetch" href="/assets/js/31.029347d6.js"><link rel="prefetch" href="/assets/js/32.74fa6a64.js"><link rel="prefetch" href="/assets/js/33.0ea98229.js"><link rel="prefetch" href="/assets/js/34.4efe18bd.js"><link rel="prefetch" href="/assets/js/4.8422bc68.js"><link rel="prefetch" href="/assets/js/5.8b3ff531.js"><link rel="prefetch" href="/assets/js/6.ac5263b0.js"><link rel="prefetch" href="/assets/js/7.7883cabe.js"><link rel="prefetch" href="/assets/js/8.ddd2a348.js"><link rel="prefetch" href="/assets/js/9.5206c4fe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8e89f972.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">xwine</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/program/" class="nav-link">编程</a></div><div class="nav-item"><a href="/zh/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/zh/maps/" class="nav-link">思维导图</a></div><div class="nav-item"><a href="/zh/config/" class="nav-link router-link-active">快速配置</a></div> <a href="https://github.com/xwine" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/program/" class="nav-link">编程</a></div><div class="nav-item"><a href="/zh/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/zh/maps/" class="nav-link">思维导图</a></div><div class="nav-item"><a href="/zh/config/" class="nav-link router-link-active">快速配置</a></div> <a href="https://github.com/xwine" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/config/elaticSearch.html" class="active sidebar-link">ElasticSearch 配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/config/elaticSearch.html#单实例安装" class="sidebar-link">单实例安装</a></li><li class="sidebar-sub-header"><a href="/zh/config/elaticSearch.html#可视化插件安装" class="sidebar-link">可视化插件安装</a></li><li class="sidebar-sub-header"><a href="/zh/config/elaticSearch.html#分布式安装" class="sidebar-link">分布式安装</a></li><li class="sidebar-sub-header"><a href="/zh/config/elaticSearch.html#es-对比-mysql" class="sidebar-link">es 对比 mysql</a></li></ul></li><li><a href="/zh/config/docker.html" class="sidebar-link">Docker配置</a></li><li><a href="/zh/config/jvm.html" class="sidebar-link">Java虚拟机</a></li><li><a href="/zh/config/markdown.html" class="sidebar-link">Markdown</a></li><li><a href="/zh/config/vim.html" class="sidebar-link">VIM指令</a></li><li><a href="/zh/config/nginx.html" class="sidebar-link">nginx</a></li><li><a href="/zh/config/shell.html" class="sidebar-link">shell</a></li><li><a href="/zh/config/online.html" class="sidebar-link">线上问题排查</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="elasticsearch-配置"><a href="#elasticsearch-配置" aria-hidden="true" class="header-anchor">#</a> ElasticSearch 配置</h1> <h2 id="单实例安装"><a href="#单实例安装" aria-hidden="true" class="header-anchor">#</a> 单实例安装</h2> <ul><li><p>下载 ：https://www.elastic.co/downloads/elasticsearch</p></li> <li><p>解压命令：<code>tar -vxf elasticsearch-6.2.2.tar.gz</code></p></li> <li><p>启动命令： <code>./bin/elasticsearch</code></p></li> <li><p>验证启动 ：访问：http://localhost:9200/</p></li></ul> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+<span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EbJYm-O&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;cluster_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;elasticsearch&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;cluster_uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ViVy1WUpQlmM68z8vBGNUQ&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token property">&quot;number&quot;</span><span class="token operator">:</span> <span class="token string">&quot;6.2.4&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;build_hash&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ccec39f&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;build_date&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-04-12T20:37:28.497551Z&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;build_snapshot&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+<span class="token property">&quot;lucene_version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;7.2.1&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;minimum_wire_compatibility_version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.6.0&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;minimum_index_compatibility_version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.0.0&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token property">&quot;tagline&quot;</span><span class="token operator">:</span> <span class="token string">&quot;You Know, for Search&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="可视化插件安装"><a href="#可视化插件安装" aria-hidden="true" class="header-anchor">#</a> 可视化插件安装</h2> <h3 id="安装-elasticsearch-head"><a href="#安装-elasticsearch-head" aria-hidden="true" class="header-anchor">#</a> 安装 elasticsearch-head</h3> <ul><li><code>git clone git://github.com/mobz/elasticsearch-head.git</code></li> <li><code>cd elasticsearch-head</code></li> <li><code>npm install</code></li> <li><code>npm run start</code></li> <li>访问 http://localhost:9100/</li></ul> <h3 id="设置可跨域"><a href="#设置可跨域" aria-hidden="true" class="header-anchor">#</a> 设置可跨域</h3> <ul><li><p><code>vim ./config/elasticsearch.yml</code></p></li> <li><p>添加：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">http.cors.enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true  </span>
+<span class="token key atrule">http.cors.allow-origin</span><span class="token punctuation">:</span> <span class="token string">&quot;*&quot;</span> 
+</code></pre></div></li> <li><p>启动 elasticsearch</p></li> <li><p>启动 elasticsearch-head</p></li></ul> <img src="/config/elasticSearch/es-head-run.png"> <h2 id="分布式安装"><a href="#分布式安装" aria-hidden="true" class="header-anchor">#</a> 分布式安装</h2> <ul><li><p>拷贝安装文件，分别命名为<code>master</code>、<code>slave1</code>和<code>slave2</code></p></li> <li><p>执行：<code>vim master/config/elasticsearch.yml</code></p></li> <li><p>配置master</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">cluster.name</span><span class="token punctuation">:</span> xwine
+<span class="token key atrule">node.name</span><span class="token punctuation">:</span> master
+<span class="token key atrule">node.master</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">network.host</span><span class="token punctuation">:</span> 127.0.0.1
+</code></pre></div></li> <li><p>配置slave1</p> <p>执行：<code>vim slave1/config/elasticsearch.yml</code></p> <div class="language- extra-class"><pre class="language-text"><code>cluster.name: xwine
+node.name: slave1
+
+network.host: 127.0.0.1
+http.port: 9201
+
+discovery.zen.ping.unicast.hosts: [&quot;127.0.0.1&quot;]
+</code></pre></div></li> <li><p>配置slave2</p> <div class="language- extra-class"><pre class="language-text"><code>cluster.name: xwine
+node.name: slave2
+
+network.host: 127.0.0.1
+http.port: 9202
+
+discovery.zen.ping.unicast.hosts: [&quot;127.0.0.1&quot;]
+</code></pre></div></li> <li><p>启动es集群</p> <div class="language-shell extra-class"><pre class="language-shell"><code>./master/bin/elasticsearch -d
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>./slave1/bin/elasticsearch -d
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>./slave2/bin/elasticsearch -d
+</code></pre></div></li></ul> <h2 id="es-对比-mysql"><a href="#es-对比-mysql" aria-hidden="true" class="header-anchor">#</a> es 对比 mysql</h2> <p>es 天生支持分片 mysql不行
+数据存储结构
+查询方式的区别</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/xwine/edit/master/docs/zh/config/elaticSearch.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2019/11/7 下午4:42:25</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/zh/config/docker.html">Docker配置</a>→
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e3e8a4f2.js" defer></script><script src="/assets/js/2.53d3f055.js" defer></script><script src="/assets/js/17.6cd51b48.js" defer></script>
+  </body>
+</html>
